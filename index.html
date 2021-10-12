@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +9,62 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css">
-    <title>Max Chernicov</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>Maksym Chernikov</title>
 </head>
+
 <body>
     <header class="header-section">
         <div class="container">
             <div class="header">
                 <ul class="nav-list">
                     <li class="nav-listItem">
-                        <a class="nav-link active-link" href="#">ABOUT</a>
+                        <a class="nav-link active-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-listItem">
-                        <a class="nav-link" href="#">PROJECTS</a>
+                        <a class="nav-link" href="#projects">PROJECTS</a>
                     </li>
                     <li class="nav-listItem">
-                        <a class="nav-link" href="#">CONTACTS</a>
+                        <a class="nav-link" href="#contacts">CONTACTS</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    
+
     <section class="hero-section">
         <div class="container">
+            <!-- hero-container -->
             <div class="hero">
                 <div class="hero-info">
-                    <h1 class="hero-title">MAX CHERNICOV</h1>
-                    <p class="hero-caption">Project coordinator</p>
-                    <p class="hero-text">Interdum auctor leo ac sed volutpat morbi
-                        vel mauris. Porttitor quis morbi id sagittis eget.
-                        Consectetur adipiscing ante
-                        at duis at quis cras.<br>
+                    <h1 class="hero-title">Maksym
+                        Chernikov</h1>
+                    <p class="hero-caption">Creative entrepreneur</p>
+                    <p class="hero-text">My goal is to be able to implement any idea, no matter how fantastic and
+                        incredible it may seem.<br>
                         <br>
-                        Interdum auctor leo ac sed volutpat morbi vel mauris. Porttitor quis morbi id sagittis eget.
+                        I believe that a person is capable of achieving a lot, but having assembled a team, it is
+                        possible to solve super tasks.
                     </p>
                 </div>
-                <img src="./images/photo.png" alt="photo" class="hero-photo">
+                <img src="./images/photo.jpg" alt="photo" class="hero-photo">
             </div>
         </div>
     </section>
-    <section class="project-section">
+    <section class="project-section" id="projects">
         <div class="container">
-            <div class="wrapper">
-                <div class="project-info">
+            <div class="wrapper-left">
+                <svg class="first-proj-icon">
+                    <use href="./images/sprite.svg#digital-show"></use>
+                </svg>
+                <div class="project-info-left">
                     <span class="project-span">PROJECT</span>
-                    <h2 class="project-title">DIGITAL SHOW</h2>
-                    <p class="project-subscription">Ut euismod ut odio elementum. Ornare et tempus mattis vulputate convallis tincidunt volutpat amet orci. Felis tristique
-                        a, elit purus velit. Ornare ac quis eget viverra ullamcorper pulvinar bibendum.<br>
+                    <h2 class="project-title">Digital Show</h2>
+                    <p class="project-subscription-left">A workshop of cool features for theater, stand-up and related
+                        genres. From a program for an interactive show, to a
+                        platform that sells and entertains.<br>
                         <br>
-                        Nulla eget lacus, diam rhoncus iaculis nec at molestie sit.
+                        The project is at the pre-seed stage with a working prototype and ongoing development.
                     </p>
                     <a href="#" class="more-btn">SEE MORE</a>
                 </div>
@@ -66,83 +74,118 @@
     </section>
     <section class="project-section">
         <div class="container">
-            <div class="wrapper">
+            <div class="wrapper-right">
+                <svg class="second-proj-icon">
+                    <use href="./images/sprite.svg#local-ua"></use>
+                </svg>
                 <img src="./images/section_image_2.jpg" alt="project-image" class="project-image">
-                <div class="project-info">
+                <div class="project-info-right">
                     <span class="project-span">PROJECT</span>
                     <h2 class="project-title">Local Ua</h2>
-                    <p class="project-subscription">Ut euismod ut odio elementum. Ornare et tempus mattis vulputate convallis tincidunt
-                        volutpat amet orci. Felis tristique
-                        a, elit purus velit. Ornare ac quis eget viverra ullamcorper pulvinar bibendum.<br>
+                    <p class="project-subscription-right">Walk the routes tailored to your company
+                        and its mood, enjoy the
+                        constantly updated content of mobile applications for
+                        Android and iOS. Add a cool guide who will make your walk around your favorite city
+                        unforgettable.<br>
                         <br>
-                        Nulla eget lacus, diam rhoncus iaculis nec at molestie sit.
+                        The project is at the seed stage with ongoing development.
                     </p>
-                    <a href="#" class="more-btn">SEE MORE</a>
+                    <a href="#" class="more-btn more-btn-right">SEE MORE</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="project-section">
-        <div class="container">
-            <div class="wrapper">
-                <div class="project-info">
-                    <span class="project-span">PROJECT</span>
-                    <h2 class="project-title">Digital Show</h2>
-                    <p class="project-subscription">Ut euismod ut odio elementum. Ornare et tempus mattis vulputate convallis tincidunt
-                        volutpat amet orci. Felis tristique
-                        a, elit purus velit. Ornare ac quis eget viverra ullamcorper pulvinar bibendum.<br>
-                        <br>
-                        Nulla eget lacus, diam rhoncus iaculis nec at molestie sit.
-                    </p>
-                    <a href="#" class="more-btn">SEE MORE</a>
+    <section class="slider-section">
+        <div class="slider-container">
+            <h2 class="slider-title">
+                <span>
+                    <svg class="other-proj-icon">
+                        <use href="./images/sprite.svg#other-proj"></use>
+                    </svg>
+                </span>
+                OTHER PROJECTS
+            </h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <h3 class="card-title">INTERACTIVE PERFORMANCE</h3>
+                            <img src="./images/project_image_1.jpg" alt="">
+                            <a href="" class="slide-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <h3 class="card-title">ENLIGHTENING INITIATIVE</h3>
+                            <img src="./images/project_image_2.jpg" alt="">
+                            <a href="" class="slide-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <h3 class="card-title">ELEOS LVIV</h3>
+                            <img src="./images/project_image_3.jpg" alt="">
+                            <a href="" class="slide-btn">SEE MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-card">
+                            <h3 class="card-title">SMART WASTE</h3>
+                            <img src="./images/project_image_2.jpg" alt="">
+                            <a href="" class="slide-btn">SEE MORE</a>
+                        </div>
+                    </div>
                 </div>
-                <img src="./images/section_image_3.jpg" alt="project-image" class="project-image">
+                <div class="swiper-button-next">
+                    <!-- <div>
+                        <svg class="custom-button-left" width="40" height="40">
+                            <use href="./images/sprite.svg#slider-nav-left"></use>
+                        </svg>
+                    </div> -->
+                </div>
+                <div class="swiper-button-prev">
+                    <!-- <div>
+                        <svg class="custom-button-right" width="40" height="40">
+                            <use href="./images/sprite.svg#slider-nav-right"></use>
+                        </svg>
+                    </div> -->
+                </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="container">
-            <ul>
-                <li>
-                    <h3>TITLE 1</h3>
-                    <a href="">
-                        <img src="./images/project_image_1.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <h3>TITLE 1</h3>
-                    <a href="">
-                        <img src="./images/project_image_2.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <h3>TITLE 1</h3>
-                    <a href="">
-                        <img src="./images/project_image_3.jpg" alt="">
-                    </a>
-                </li>
-            </ul>
         </div>
     </section>
-    <footer>
-        <!-- ГЛЯНУТЬ ADDRESS -->
+    <footer class="footer-section" id="contacts">
         <div class="container">
-            <ul>
-                <li>
-                    <p>phone number</p>
-                    <p>+380 93 456 78 90</p>
-                </li> 
-                <li>
-                    <p>email</p>
-                    <p>max.chernicov@gmail.com</p>
-                </li>
-                <li>
-                    <p>social media</p>
-                    <p>@max.chernicov</p>
-                </li>
-            </ul>
+            <address>
+                <ul class="address-list">
+                    <li>
+                        <p class="address-info">Phone number</p>
+                        <a href="tel:+380934567890" class="address-link">
+                            <svg class="address-icon" width="19" height="19">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>+380 93 456 78 90</a>
+                    </li>
+                    <li>
+                        <p class="address-info">Email</p>
+                        <a href="mailto:max.chernicov@gmail.com" class="address-link">
+                            <svg class="address-icon" width="19" height="15">
+                                <use href="./images/sprite.svg#envelope"></use>
+                            </svg>max.chernicov@gmail.com</a>
+                    </li>
+                    <li>
+                        <p class="address-info">Social media</p>
+                        <a href="tg://resolve?domain=max_chernikov" class="address-link">
+                            <svg class="address-icon" width="18" height="18">
+                                <use href="./images/sprite.svg#telegram"></use>
+                            </svg>@max.chernicov</a>
+                    </li>
+                </ul>
+            </address>
         </div>
     </footer>
-    <script src="script/script.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./script/slider.js"></script>
 </body>
+
 </html>
