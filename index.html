@@ -19,7 +19,7 @@
             <div class="header">
                 <ul class="nav-list">
                     <li class="nav-listItem">
-                        <a class="nav-link active-link" href="#about">ABOUT</a>
+                        <a class="nav-link active-link" href="">ABOUT</a>
                     </li>
                     <li class="nav-listItem">
                         <a class="nav-link" href="#projects">PROJECTS</a>
@@ -66,7 +66,8 @@
                         <br>
                         The project is at the pre-seed stage with a working prototype and ongoing development.
                     </p>
-                    <a href="#" class="more-btn">SEE MORE</a>
+                    <!-- <a href="" class="more-btn" data-modal-open onclick="return false;">SEE MORE</a> -->
+                    <button class="more-btn" data-modal-open>SEE MORE</button>
                 </div>
                 <img src="./images/section_image_1.jpg" alt="project-image" class="project-image">
             </div>
@@ -90,7 +91,8 @@
                         <br>
                         The project is at the seed stage with ongoing development.
                     </p>
-                    <a href="#" class="more-btn more-btn-right">SEE MORE</a>
+                    <!-- <a href="" class="more-btn more-btn-right" onclick="return false;">SEE MORE</a> -->
+                    <button class="more-btn more-btn-right" data-modal-open>SEE MORE</button>
                 </div>
             </div>
         </div>
@@ -111,59 +113,56 @@
                         <div class="slider-card">
                             <h3 class="card-title">INTERACTIVE PERFORMANCE</h3>
                             <img src="./images/project_image_1.jpg" alt="">
-                            <a href="" class="slide-btn">SEE MORE</a>
+                            <!-- <a href="" class="slide-btn">SEE MORE</a> -->
+                            <button type="button" class="slide-btn">SEE MORE</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slider-card">
                             <h3 class="card-title">ENLIGHTENING INITIATIVE</h3>
                             <img src="./images/project_image_2.jpg" alt="">
-                            <a href="" class="slide-btn">SEE MORE</a>
+                            <!-- <a href="" class="slide-btn">SEE MORE</a> -->
+                            <button type="button" class="slide-btn">SEE MORE</button>
+
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slider-card">
                             <h3 class="card-title">ELEOS LVIV</h3>
                             <img src="./images/project_image_3.jpg" alt="">
-                            <a href="" class="slide-btn">SEE MORE</a>
+                            <!-- <a href="" class="slide-btn">SEE MORE</a> -->
+                            <button type="button" class="slide-btn">SEE MORE</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slider-card">
                             <h3 class="card-title">SMART WASTE</h3>
                             <img src="./images/project_image_2.jpg" alt="">
-                            <a href="" class="slide-btn">SEE MORE</a>
+                            <!-- <a href="" class="slide-btn">SEE MORE</a> -->
+                            <button type="button" class="slide-btn">SEE MORE</button>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next">
-                    <!-- <div>
-                        <svg class="custom-button-left" width="40" height="40">
-                            <use href="./images/sprite.svg#slider-nav-left"></use>
-                        </svg>
-                    </div> -->
-                </div>
-                <div class="swiper-button-prev">
-                    <!-- <div>
-                        <svg class="custom-button-right" width="40" height="40">
-                            <use href="./images/sprite.svg#slider-nav-right"></use>
-                        </svg>
-                    </div> -->
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
         </div>
     </section>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">asdasdasdasdasddasds</div>
+        <button class="close-modal" data-modal-close>CLOSE</button>
+    </div>
     <footer class="footer-section" id="contacts">
         <div class="container">
             <address>
                 <ul class="address-list">
                     <li>
                         <p class="address-info">Phone number</p>
-                        <a href="tel:+380934567890" class="address-link">
+                        <a href="tel:+380666992798" class="address-link">
                             <svg class="address-icon" width="19" height="19">
                                 <use href="./images/sprite.svg#phone"></use>
-                            </svg>+380 93 456 78 90</a>
+                            </svg>+380 66 699 27 98</a>
                     </li>
                     <li>
                         <p class="address-info">Email</p>
@@ -177,7 +176,7 @@
                         <a href="tg://resolve?domain=max_chernikov" class="address-link">
                             <svg class="address-icon" width="18" height="18">
                                 <use href="./images/sprite.svg#telegram"></use>
-                            </svg>@max.chernicov</a>
+                            </svg>@max.chernikov</a>
                     </li>
                 </ul>
             </address>
