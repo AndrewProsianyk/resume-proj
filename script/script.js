@@ -13,11 +13,15 @@ const closeSecondModalButton = document.querySelector('.close-second-modal-butto
 
 const bodyEl = document.querySelector('body')
 
+const openOverlayBtn = document.querySelector('.open-overlay-btn')
+const closeOverlayBtn = document.querySelector('.close-overlay-btn')
+const overlayEl = document.querySelector('.js-card-overlay')
+
 
 openFirstModalButton.addEventListener('click', firstModalOpen)
 openSecondModalButton.addEventListener('click', secondModalOpen)
 
-
+openOverlayBtn.addEventListener('click', openOverlayClick)
 
 
 
@@ -63,4 +67,13 @@ function onEscPress(event) {
     if (event.code === ESC_KEY_CODE) {
         onCloseFirstModalBtnClick() || onCloseSecondModalBtnClick()
     }
+}
+
+function openOverlayClick() {
+    overlayEl.classList.add('open')
+    closeOverlayBtn.addEventListener('click', closeOverlayClick)
+}
+function closeOverlayClick() {
+    overlayEl.classList.remove('open')
+    closeOverlayBtn.removeEventListener('click', closeOverlayClick)
 }

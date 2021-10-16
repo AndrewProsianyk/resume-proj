@@ -31,7 +31,6 @@
             </div>
         </div>
     </header>
-
     <section class="hero-section">
         <div class="container">
             <!-- hero-container -->
@@ -113,16 +112,32 @@
                     <div class="swiper-slide">
                         <div class="slider-card">
                             <h3 class="card-title">INTERACTIVE PERFORMANCE</h3>
-                            <img src="./images/project_image_1.jpg" alt="">
-                            <!-- <a href="" class="slide-btn">SEE MORE</a> -->
-                            <button type="button" class="slide-btn">SEE MORE</button>
+                            <div class="card-image">
+                                <img src="./images/project_image_1.jpg" alt="">
+                                <div class="card-overlay js-card-overlay">
+                                    <button type="button" class="close-button close-overlay-btn">
+                                        <svg class="close-icon">
+                                            <use href="./images/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <p>The play "In a Minute" with a non-linear script, the development of which is
+                                        determined by the audience, voting on a
+                                        website specially designed for this event.<br>
+                                        <br>The premiere took place on December 13, 2019 in Kharkiv -
+                                        <a href="">https://kharkov.internet-bilet.ua/uk/za-minutu</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="button" class="slide-btn open-overlay-btn">SEE MORE</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slider-card">
                             <h3 class="card-title">ENLIGHTENING INITIATIVE</h3>
-                            <img src="./images/project_image_2.jpg" alt="">
-                            <!-- <a href="" class="slide-btn">SEE MORE</a> -->
+                            <div class="card-image">
+                                <img src="./images/project_image_2.jpg" alt="">
+                                <div class="card-overlay"></div>
+                            </div>
                             <button type="button" class="slide-btn">SEE MORE</button>
 
                         </div>
@@ -130,16 +145,20 @@
                     <div class="swiper-slide">
                         <div class="slider-card">
                             <h3 class="card-title">ELEOS LVIV</h3>
-                            <img src="./images/project_image_3.jpg" alt="">
-                            <!-- <a href="" class="slide-btn">SEE MORE</a> -->
+                            <div class="card-image">
+                                <img src="./images/project_image_3.jpg" alt="">
+                                <div class="card-overlay"></div>
+                            </div>
                             <button type="button" class="slide-btn">SEE MORE</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="slider-card">
                             <h3 class="card-title">SMART WASTE</h3>
-                            <img src="./images/project_image_2.jpg" alt="">
-                            <!-- <a href="" class="slide-btn">SEE MORE</a> -->
+                            <div class="card-image">
+                                <img src="./images/project_image_2.jpg" alt="">
+                                <div class="card-overlay"></div>
+                            </div>
                             <button type="button" class="slide-btn">SEE MORE</button>
                         </div>
                     </div>
@@ -152,11 +171,83 @@
     </section>
     <!-- MODAL WINDOWS -->
     <div class="backdrop js-backdrop">
-        <div class="modal-first js-modal-first">AAAAAAAAAAAAAAAAAA
-            <button class="close-modal close-first-modal-button">CLOSE</button>
+        <!-- FIRST MODAL -->
+        <div class="modal-first js-modal-first">
+            <div class="modal-content">
+                <ul class="progress-list">
+                    <li class="progress-list-item">
+                        <!-- <svg>
+                            <use></use>
+                        </svg> -->
+                        <div>
+                            <span class="progress-date">June 2019</span>
+                            <p>The birth of an idea, the beginning of its development</p>
+                        </div>
+                    </li>
+                    <li class="progress-list-item">
+                        <!-- <svg>
+                            <use></use>
+                        </svg> -->
+                        <div>
+                            <span class="progress-date">April 2020</span>
+                            <p>Start of prototype development</p>
+                        </div>
+                    </li>
+                    <li class="progress-list-item">
+                        <!-- <svg>
+                            <use></use>
+                        </svg> -->
+                        <div>
+                            <span class="progress-date">July 2021</span>
+                            <p>Victory in the <a href="">Hack The Culture hackathon</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="close-button close-first-modal-button">
+                <svg class="close-icon">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
         </div>
-        <div class="modal-second js-modal-second">BBBBBBBBBBBBBBBBBBBBBB
-            <button class="close-modal close-second-modal-button">CLOSE</button>
+        <!-- SECOND MODAL -->
+        <div class="modal-second js-modal-second">
+            <div class="modal-content">
+                <ul class="progress-list">
+                    <li class="progress-list-item">
+                        <!-- <svg>
+                            <use></use>
+                        </svg> -->
+                        <div>
+                            <span class="progress-date">September 2020</span>
+                            <p>The birth of an idea, the beginning of its development</p>
+                        </div>
+                    </li>
+                    <li class="progress-list-item">
+                        <!-- <svg>
+                            <use></use>
+                        </svg> -->
+                        <div>
+                            <span class="progress-date">January 2021</span>
+                            <p>Start of development</p>
+                        </div>
+                    </li>
+                    <li class="progress-list-item">
+                        <!-- <svg>
+                            <use></use>
+                        </svg> -->
+                        <div>
+                            <span class="progress-date">October 2021</span>
+                            <p>Release of the first version of the application</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="close-button close-second-modal-button">
+                <svg class="close-icon">
+                    <use href="./images/sprite.svg#close"></use>
+                </svg>
+            </button>
         </div>
     </div>
 
