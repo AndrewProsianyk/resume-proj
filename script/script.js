@@ -17,13 +17,26 @@ const openOverlayBtn = document.querySelector('.open-overlay-btn')
 const closeOverlayBtn = document.querySelector('.close-overlay-btn')
 const overlayEl = document.querySelector('.js-card-overlay')
 
+const sliderContainer = document.querySelector('.swiper')
 
+sliderContainer.addEventListener('click', onSliderClick)
 openFirstModalButton.addEventListener('click', firstModalOpen)
 openSecondModalButton.addEventListener('click', secondModalOpen)
 
-openOverlayBtn.addEventListener('click', openOverlayClick)
 
+function onSliderClick(event) {
+    if (!event.target.classList.contains('slide-btn')) {
+        return
+    };
+    event.preventDefault();
+    const sliderCardEl = event.target.closest('.slider-card').querySelector('.card-overlay')
+    sliderCardEl.classList.add('open')
 
+    const currentCloseOverlayBtn = sliderCardEl.querySelector('.close-overlay-btn')
+    currentCloseOverlayBtn.addEventListener('click', () => {
+        sliderCardEl.classList.remove('open')
+    })
+};
 
 function firstModalOpen() {
     backdropEl.classList.add('is-open')
@@ -67,13 +80,4 @@ function onEscPress(event) {
     if (event.code === ESC_KEY_CODE) {
         onCloseFirstModalBtnClick() || onCloseSecondModalBtnClick()
     }
-}
-
-function openOverlayClick() {
-    overlayEl.classList.add('open')
-    closeOverlayBtn.addEventListener('click', closeOverlayClick)
-}
-function closeOverlayClick() {
-    overlayEl.classList.remove('open')
-    closeOverlayBtn.removeEventListener('click', closeOverlayClick)
 }

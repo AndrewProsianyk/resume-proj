@@ -32,7 +32,7 @@
         </div>
     </header>
     <section class="hero-section">
-        <div class="container">
+        <div class="hero-container">
             <!-- hero-container -->
             <div class="hero">
                 <div class="hero-info">
@@ -45,8 +45,15 @@
                         I believe that a person is capable of achieving a lot, but having assembled a team, it is
                         possible to solve super tasks.
                     </p>
+                    <a class="scrolldown-button" href="#projects">
+                        <svg class="scrolldown-icon">
+                            <use href="./images/sprite.svg#scrolldown"></use>
+                        </svg>
+                    </a>
                 </div>
-                <img src="./images/photo.jpg" alt="photo" class="hero-photo">
+                <div class="hero-photo">
+                    <img src="./images/photo.jpg" alt="photo">
+                </div>
             </div>
         </div>
     </section>
@@ -123,8 +130,9 @@
                                     <p>The play "In a Minute" with a non-linear script, the development of which is
                                         determined by the audience, voting on a
                                         website specially designed for this event.<br>
-                                        <br>The premiere took place on December 13, 2019 in Kharkiv -
-                                        <a href="">https://kharkov.internet-bilet.ua/uk/za-minutu</a>
+                                        The premiere took place on December 13, 2019 in Kharkiv -
+                                        <a
+                                            href="https://kharkov.internet-bilet.ua/uk/za-minutu">https://kharkov.internet-bilet.ua/uk/za-minutu</a>
                                     </p>
                                 </div>
                             </div>
@@ -136,10 +144,18 @@
                             <h3 class="card-title">ENLIGHTENING INITIATIVE</h3>
                             <div class="card-image">
                                 <img src="./images/project_image_2.jpg" alt="">
-                                <div class="card-overlay"></div>
+                                <div class="card-overlay js-card-overlay">
+                                    <button type="button" class="close-button close-overlay-btn">
+                                        <svg class="close-icon">
+                                            <use href="./images/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <p>Website for a youth organization <a
+                                            href="http://ngoei.org.ua/">http://ngoei.org.ua/</a>
+                                    </p>
+                                </div>
                             </div>
-                            <button type="button" class="slide-btn">SEE MORE</button>
-
+                            <button type="button" class="slide-btn open-overlay-btn">SEE MORE</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -147,9 +163,18 @@
                             <h3 class="card-title">ELEOS LVIV</h3>
                             <div class="card-image">
                                 <img src="./images/project_image_3.jpg" alt="">
-                                <div class="card-overlay"></div>
+                                <div class="card-overlay js-card-overlay">
+                                    <button type="button" class="close-button close-overlay-btn">
+                                        <svg class="close-icon">
+                                            <use href="./images/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <p>Website for a charity organization <a
+                                            href="http://eleoslviv.com.ua/">http://eleoslviv.com.ua/</a>
+                                    </p>
+                                </div>
                             </div>
-                            <button type="button" class="slide-btn">SEE MORE</button>
+                            <button type="button" class="slide-btn open-overlay-btn">SEE MORE</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -157,14 +182,26 @@
                             <h3 class="card-title">SMART WASTE</h3>
                             <div class="card-image">
                                 <img src="./images/project_image_2.jpg" alt="">
-                                <div class="card-overlay"></div>
+                                <div class="card-overlay js-card-overlay">
+                                    <button type="button" class="close-button close-overlay-btn">
+                                        <svg class="close-icon">
+                                            <use href="./images/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                    <p>Tank for separate waste collection in the city of Lyubotin, Kharkiv region</p>
+                                </div>
                             </div>
-                            <button type="button" class="slide-btn">SEE MORE</button>
+                            <button type="button" class="slide-btn open-overlay-btn">SEE MORE</button>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- PAGINATION -->
+                <div class="swiper-pagination"></div>
+
+                <!-- NAVIGATION BUTTONS -->
+
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
             </div>
         </div>
         </div>
@@ -176,27 +213,27 @@
             <div class="modal-content">
                 <ul class="progress-list">
                     <li class="progress-list-item">
-                        <!-- <svg>
-                            <use></use>
-                        </svg> -->
+                        <svg class="progress-icon">
+                            <use href="./images/sprite.svg#digital1"></use>
+                        </svg>
                         <div>
                             <span class="progress-date">June 2019</span>
                             <p>The birth of an idea, the beginning of its development</p>
                         </div>
                     </li>
                     <li class="progress-list-item">
-                        <!-- <svg>
-                            <use></use>
-                        </svg> -->
+                        <svg class="progress-icon">
+                            <use href="./images/sprite.svg#digital2"></use>
+                        </svg>
                         <div>
                             <span class="progress-date">April 2020</span>
                             <p>Start of prototype development</p>
                         </div>
                     </li>
                     <li class="progress-list-item">
-                        <!-- <svg>
-                            <use></use>
-                        </svg> -->
+                        <svg class="progress-icon">
+                            <use href="./images/sprite.svg#digital3"></use>
+                        </svg>
                         <div>
                             <span class="progress-date">July 2021</span>
                             <p>Victory in the <a href="">Hack The Culture hackathon</a></p>
@@ -215,27 +252,29 @@
             <div class="modal-content">
                 <ul class="progress-list">
                     <li class="progress-list-item">
-                        <!-- <svg>
-                            <use></use>
-                        </svg> -->
+                        <div class="progress-icon">
+                            <svg>
+                                <use href="./images/sprite.svg#local1"></use>
+                            </svg>
+                        </div>
                         <div>
                             <span class="progress-date">September 2020</span>
                             <p>The birth of an idea, the beginning of its development</p>
                         </div>
                     </li>
                     <li class="progress-list-item">
-                        <!-- <svg>
-                            <use></use>
-                        </svg> -->
+                        <svg class="progress-icon">
+                            <use href="./images/sprite.svg#local2"></use>
+                        </svg>
                         <div>
                             <span class="progress-date">January 2021</span>
                             <p>Start of development</p>
                         </div>
                     </li>
                     <li class="progress-list-item">
-                        <!-- <svg>
-                            <use></use>
-                        </svg> -->
+                        <svg class="progress-icon">
+                            <use href="./images/sprite.svg#local3"></use>
+                        </svg>
                         <div>
                             <span class="progress-date">October 2021</span>
                             <p>Release of the first version of the application</p>
