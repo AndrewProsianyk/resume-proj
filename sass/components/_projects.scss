@@ -1,0 +1,136 @@
+.project-section {
+  padding-top: 172px;
+}
+.first-proj-icon {
+  @extend %project-icon;
+  left: 250px;
+}
+.second-proj-icon {
+  @extend %project-icon;
+  right: 220px;
+}
+
+.wrapper-left {
+  @extend %wrapper;
+
+  &::before {
+    @extend %wrapper-custom-line;
+    right: -71px;
+  }
+}
+
+.wrapper-right {
+  @extend %wrapper;
+
+  &::before {
+    @extend %wrapper-custom-line;
+    left: -71px;
+  }
+}
+
+.more-btn {
+  display: flex;
+  width: 310px;
+  height: 43px;
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.1em;
+
+  &:hover {
+    border: 3px solid #000000;
+    font-weight: bold;
+  }
+}
+
+.more-btn-right {
+  @extend .more-btn;
+  left: auto;
+  right: 0;
+}
+.project-image {
+  width: 566px;
+}
+
+.project-span {
+  display: block;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1.94;
+  letter-spacing: 0.09em;
+  color: #5c5b5b;
+  padding-bottom: 18px;
+}
+.project-title {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.065em;
+  color: #000000;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.project-info-left {
+  @extend %project-info;
+  padding-right: 24px;
+
+  &::after {
+    @extend %project-info-after;
+    right: 0;
+  }
+
+  &::before {
+    @extend %project-info-before;
+    right: 0;
+  }
+}
+
+.project-info-right {
+  @extend %project-info;
+  padding-left: 24px;
+
+  &::after {
+    @extend %project-info-after;
+    left: 0;
+  }
+  &::before {
+    @extend %project-info-before;
+    left: 0;
+  }
+}
+
+.project-subscription-left {
+  @extend %project-subscription;
+  padding-left: 142px;
+
+  &::before {
+    @extend %project-subscription-customLine;
+    width: 94px;
+    left: 0;
+  }
+}
+
+.project-subscription-right {
+  @extend %project-subscription;
+  padding-right: 52px;
+
+  &::before {
+    @extend %project-subscription-customLine;
+    height: 152px;
+    right: 0;
+  }
+}

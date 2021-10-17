@@ -1,0 +1,39 @@
+.footer-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #000000;
+  color: #ffffff;
+}
+.address-list {
+  display: flex;
+}
+.address-list li {
+  width: 330px;
+}
+.address-list li:not(:last-child) {
+  margin-right: 84px;
+}
+.address-info {
+  margin-bottom: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.09em;
+
+  color: #ffffff;
+}
+.address-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  text-transform: lowercase;
+  align-items: center;
+
+  color: #ffffff;
+}
+.address-icon {
+  margin-right: 14px;
+}

@@ -1,0 +1,58 @@
+.hero-section {
+  background-color: black;
+}
+.hero-container {
+  width: 1440px;
+  padding-left: 142px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-photo {
+  width: 708px;
+  height: 699px;
+}
+.hero-info {
+  width: 566px;
+  position: relative;
+}
+.hero-title {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 1.17;
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.hero-caption {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 93px;
+  color: #f3f3f3;
+}
+.hero-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+.scrolldown-button {
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border: none;
+  background-color: transparent;
+  left: 0;
+  bottom: -80px;
+}
+.scrolldown-icon {
+  width: 33px;
+  height: 33px;
+}
