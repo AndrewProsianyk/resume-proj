@@ -1,13 +1,33 @@
 .project-section {
-  padding-top: 172px;
+  padding-top: 82px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 110px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 172px;
+  }
 }
 .first-proj-icon {
   @extend %project-icon;
-  left: 250px;
+  top: -50px;
+  left: 135px;
+
+  @media screen and (min-width: 1440px) {
+    left: 250px;
+    top: -60px;
+  }
 }
 .second-proj-icon {
   @extend %project-icon;
-  right: 220px;
+  right: 135px;
+  top: -50px;
+
+  @media screen and (min-width: 1440px) {
+    right: 220px;
+    top: -60px;
+  }
 }
 
 .wrapper-left {
@@ -21,35 +41,47 @@
 
 .wrapper-right {
   @extend %wrapper;
-
   &::before {
     @extend %wrapper-custom-line;
     left: -71px;
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
   }
 }
 
 .more-btn {
   display: flex;
-  width: 310px;
-  height: 43px;
+  width: 178px;
+  height: 25px;
   border: 1px solid #000000;
   color: #000000;
   background-color: #fff;
   text-align: center;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: static;
   bottom: 0;
-  left: 0;
+  // left: 0;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.17;
   letter-spacing: 0.1em;
+  margin-bottom: 18px;
 
   &:hover {
     border: 3px solid #000000;
     font-weight: bold;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 310px;
+    height: 43px;
+    font-size: 18px;
   }
 }
 
@@ -57,80 +89,121 @@
   @extend .more-btn;
   left: auto;
   right: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
 }
 .project-image {
-  width: 566px;
+  width: 317px;
+  @media screen and (min-width: 768px) {
+    width: 322px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 566px;
+  }
 }
 
 .project-span {
   display: block;
   font-style: normal;
   font-weight: 300;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.94;
   letter-spacing: 0.09em;
   color: #5c5b5b;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    padding-bottom: 28px;
+  }
 }
 .project-title {
   display: block;
   font-style: normal;
   font-weight: normal;
-  font-size: 72px;
+  font-size: 42px;
   line-height: 1.18;
   letter-spacing: 0.065em;
   color: #000000;
   padding-bottom: 30px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 72px;
+  }
 }
 
 .project-info-left {
   @extend %project-info;
-  padding-right: 24px;
-
-  &::after {
-    @extend %project-info-after;
-    right: 0;
-  }
 
   &::before {
     @extend %project-info-before;
     right: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-right: 16px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-right: 24px;
   }
 }
 
 .project-info-right {
   @extend %project-info;
-  padding-left: 24px;
 
-  &::after {
-    @extend %project-info-after;
-    left: 0;
-  }
   &::before {
     @extend %project-info-before;
     left: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 24px;
   }
 }
 
 .project-subscription-left {
   @extend %project-subscription;
-  padding-left: 142px;
+  padding-left: 68px;
+  margin-bottom: 15px;
+
+  width: 100%;
 
   &::before {
     @extend %project-subscription-customLine;
-    width: 94px;
+    width: 54px;
     left: 0;
+    border-top: 1px solid #202020;
+    @media screen and (min-width: 1440px) {
+      width: 94px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 118px;
+    margin-bottom: 0px;
   }
 }
 
 .project-subscription-right {
   @extend %project-subscription;
-  padding-right: 52px;
-
+  padding-right: 24px;
+  margin-bottom: 15px;
   &::before {
     @extend %project-subscription-customLine;
-    height: 152px;
+    border-right: 1px solid #202020;
+    height: 85px;
     right: 0;
+
+    @media screen and (min-width: 1440px) {
+      height: 152px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-right: 52px;
+    margin-bottom: 0px;
   }
 }

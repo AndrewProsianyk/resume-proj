@@ -1,48 +1,111 @@
 .slider-section {
-  padding-top: 120px;
-  padding-bottom: 46px;
+  padding-top: 70px;
+  padding-bottom: 42px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 54px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 120px;
+    padding-bottom: 46px;
+  }
 }
 .slider-container {
-  width: 1440px;
-  padding-left: 23px;
-  padding-right: 23px;
+  width: 375px;
+  padding-left: 29px;
+  padding-right: 29px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
 .slider-title {
   display: inline-block;
   position: relative;
-  margin-bottom: 77px;
+  margin-bottom: 36px;
   margin-left: auto;
   margin-right: auto;
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
+  font-size: 26px;
   line-height: 118.4%;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 64px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    margin-bottom: 77px;
+  }
 }
 .other-proj-icon {
-  width: 101px;
-  height: 101px;
+  width: 52px;
+  height: 52px;
   position: absolute;
-  top: -23px;
-  left: -34px;
+  top: -10px;
+  left: -18px;
+
+  @media screen and (min-width: 768px) {
+    width: 58px;
+    height: 58px;
+    top: -12px;
+    left: -20px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 101px;
+    height: 101px;
+    top: -23px;
+    left: -34px;
+  }
 }
 
 .swiper {
-  width: 1400px;
   overflow: visible;
+  width: 314px;
+  @media screen and (min-width: 768px) {
+    min-width: 710px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1400px;
+  }
 }
 .swiper-slide {
-  width: 448px;
+  width: 375px;
+}
+.slider-card {
+  width: 314px;
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 400px;
+  }
 }
 .swiper-wrapper {
   margin-bottom: 28px;
 }
 .swiper-pagination {
   bottom: 0 !important;
+  width: 317px !important;
+  @media screen and (min-width: 768px) {
+    width: 710px !important;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1400px !important;
+  }
 }
 .swiper-pagination-bullet {
   width: 65px !important;
@@ -62,7 +125,8 @@
 
 .slide-btn {
   display: flex;
-  width: 310px;
+  width: 100%;
+  // width: 310px;
   height: 43px;
   border: 1px solid #000000;
   color: #000000;
@@ -115,18 +179,27 @@
 
 .card-title {
   display: flex;
-  height: 120px;
+  height: 80px;
   text-align: left;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 118.4%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    height: 54px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 36px;
+    height: 120px;
+  }
 }
 .card-image {
-  width: 440px;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -135,11 +208,11 @@
   display: block;
   width: 100%;
   height: 100%;
-  padding: 74px 20px;
+  padding: 50px 20px;
   text-align: left;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 122.9%;
   letter-spacing: 0.02em;
   color: #000000;
@@ -152,6 +225,15 @@
 
   &.open {
     transform: translateY(0%);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 11px;
+    padding: 30px 20px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 22px;
+    padding: 44px 20px;
   }
 }
 .card-overlay a {

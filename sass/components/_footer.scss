@@ -5,34 +5,72 @@
   color: #ffffff;
 }
 .address-list {
-  display: flex;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+  }
 }
 .address-list li {
-  width: 330px;
+  width: 100%;
+
+  @media screen and (min-width: 1440px) {
+    width: 330px;
+  }
 }
 .address-list li:not(:last-child) {
-  margin-right: 84px;
+  margin-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 45px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 84px;
+  }
 }
 .address-info {
-  margin-bottom: 18px;
+  margin-bottom: 7px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.09em;
-
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
 }
 .address-link {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.17;
-  display: flex;
   text-transform: lowercase;
   align-items: center;
-
+  text-align: center;
+  display: flex;
+  justify-content: center;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+    font-size: 10px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 .address-icon {
   margin-right: 14px;

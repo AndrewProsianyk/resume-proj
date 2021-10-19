@@ -6,10 +6,27 @@ const swiper = new Swiper(".swiper", {
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: true,
     },
     speed: 400,
-    spaceBetween: 40,
+    slideToClickedSlide: true,
     loop: true,
-    slidesPerView: 3,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+
+        },
+        768: {
+            slidesPerView: 3,
+            // spaceBetween: 50,
+            spaceBetween: 25,
+        },
+        1440: {
+            slidesPerView: 3.3,
+        }
+    }
 
 });
