@@ -39,6 +39,10 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -261,6 +265,7 @@ img {
 .nav-link {
   font-weight: 300;
   font-size: 16px;
+  text-transform: uppercase;
   line-height: 1.17;
   color: #dcdcdc;
 }
@@ -409,7 +414,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) {
   .hero-info {
     padding-right: 15px;
   }
@@ -587,6 +592,7 @@ img {
   font-weight: normal;
   font-size: 10px;
   line-height: 1.17;
+  text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 18px;
 }
@@ -1054,7 +1060,7 @@ img {
 
 @media screen and (min-width: 1440px) {
   .card-overlay {
-    font-size: 22px;
+    font-size: 20px;
     padding: 44px 20px;
   }
 }
