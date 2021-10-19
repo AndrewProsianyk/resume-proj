@@ -11,6 +11,7 @@ const swiper = new Swiper(".swiper", {
     speed: 400,
     slideToClickedSlide: true,
     loop: true,
+    spaceBetween: 20,
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -21,7 +22,7 @@ const swiper = new Swiper(".swiper", {
         },
         768: {
             slidesPerView: 3,
-            // spaceBetween: 50,
+
             spaceBetween: 25,
         },
         1440: {
