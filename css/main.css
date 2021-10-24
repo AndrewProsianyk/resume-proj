@@ -116,10 +116,11 @@ button {
   content: "";
   position: absolute;
   width: 71px;
+  border-top: 1px solid black;
   bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .wrapper-left::before, .wrapper-right::before {
     display: block;
   }
