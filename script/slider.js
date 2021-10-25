@@ -9,7 +9,6 @@ const swiper = new Swiper(".swiper", {
         clickable: true,
     },
     speed: 400,
-    slideToClickedSlide: true,
     loop: true,
     spaceBetween: 20,
     breakpoints: {
