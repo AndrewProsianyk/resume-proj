@@ -46,6 +46,7 @@ function onCloseModalBtnClick() {
     backdropEl.classList.remove('is-open')
     bodyEl.classList.remove('backdrop-open')
     modalFirstEl.classList.remove('modal-open')
+    modalSecondEl.classList.remove('modal-open')
 };
 
 function onModalBackdropClick(event) {
